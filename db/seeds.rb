@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+r1 = Room.create (name: 'Studio Mazargue', city: Marseille)
+r1 = Room.create (name: 'Studio Vauban', city: Marseille)
+r1 = Room.create (name: 'Studio Endoume', city: Marseille)
+r1 = Room.create (name: "Studio Porte d'Aix", city: Marseille)
+r1 = Room.create (name: 'Studio La Viste', city: Marseille)
+r1 = Room.create (name: 'Studio La Gare', city: Aubagne)
+r1 = Room.create (name: 'Studio Callelongue', city: Marseille)
+r1 = Room.create (name: 'Studio Castellane', city: Marseille)
+r1 = Room.create (name: 'Studio Paradis', city: Marseille)
+r1 = Room.create (name: 'Studio du Port', city: Cassis)
