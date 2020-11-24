@@ -1,1 +1,15 @@
-index.html.erb
+<h1>My Best rooms</h1>
+
+
+    <% @rooms.each do |room| %>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://www.lesmusicales.fr/wp-content/uploads/2019/04/sono.jpeg" alt="Card image cap">
+  <div class="card-body">
+    <p class="card-text">
+          <li><%= link_to room.name, root_path  %></li>
+          <% end %>
+    </p>
+  </div>
+</div>
+
+
