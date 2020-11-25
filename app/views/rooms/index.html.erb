@@ -1,16 +1,28 @@
-<h1>Salles de répétition à Marseille</h1>
-
-<div class="card-deck">
-<% @rooms.each do |room| %>
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="https://www.lesmusicales.fr/wp-content/uploads/2019/04/sono.jpeg" alt="Card image cap">
-  <div class="card-body">
-    <p class="card-text">
-      <li><%= link_to room.name, root_path  %></li>
-    </p>
-  </div>
-</div>
-<% end %>
+  <h2 class="btn btn-ghost d-flex"><%= link_to "Home", root_path  %> </h2>
+<div class="row justify-content-center">
+  <h1 class="text-center">Salles de répétition à Marseille</h1>
 </div>
 
-
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-8 mt-5">
+            <% @rooms.each do |room| %>
+            <div class="card">
+                <div class="card-horizontal d-flex">
+                    <div class="img-square-wrapper">
+                        <img class="" src="https://www.lesmusicales.fr/wp-content/uploads/2019/04/sono.jpeg" alt="Card image cap" width="300" height="180">
+                    </div>
+                    <div class="card-body ">
+                        <h4 class="card-title"><%= link_to room.name, room_path(room)  %></h4>
+                        <h5> Description</h5>
+                        <p class="card-text">Salle disposant d'une batterie, d'une guitare electrique et d'une guitare bass</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted"><%= link_to "15 rue d'endoume, Marseille", "https://www.google.com/maps/place/15+Rue+d'Endoume,+13007+Marseille/@43.291051,5.3645702,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9c0c5f3daeb8f:0xddc92c5416a797c2!8m2!3d43.291051!4d5.3667589" %></small>
+                </div>
+            </div>
+            <%end%>
+        </div>
+    </div>
+</div>
