@@ -1,16 +1,21 @@
-<br> <br> <br>
-<div class="container">
+<br>
+<div class="containershow">
+  <div class="containerroom">
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
    <%= link_to "15 rue d'endoume, Marseille", "https://www.google.com/maps/place/15+Rue+d'Endoume,+13007+Marseille/@43.291051,5.3645702,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9c0c5f3daeb8f:0xddc92c5416a797c2!8m2!3d43.291051!4d5.3667589" %>
+  </div>
   <br><br><br>
   <div class="row">
     <div class="col-lg-6">
-      Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Iure assumenda repellat iusto ad tempora earum voluptates rem exercitationem
-      praesentium placeat, minus cupiditate odio recusandae asperiores, delectus quibusdam, animi porro soluta! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ratione alias maxime et,
-    iusto exercitationem blanditiis, iste nobis omnis nulla voluptates enim autem quos doloribus aliquam aperiam, soluta officia rem! Lorem ipsum, dolor sit, amet consectetur adipisicing elit.
-    Ad laudantium dolor modi doloribus in? Consectetur maxime commodi voluptate praesentium, vel molestias corrupti dignissimos aspernatur minus earum asperiores sunt expedita voluptas.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, at! Ea sequi expedita exercitationem corrupti eum, dolor veniam rem corporis praesentium consequuntur tenetur sint adipisci amet dicta a labore eius?
+     Notre Home Studio réunit les meilleures conditions propices au travail en Studio d'enregistrement.
+     Depuis de nombreuses années nous efforçons de nous mettre au service de votre projet !
+     Venez enregistrer ou simplement répéter vos morceaux dans notre espace dédié.
+     Have fun!
+     <br>
+     C’est un endroit indispensable à la production musicale de qualité car il met à la disposition des artistes, réalisateurs et ingénieurs un personnel qualifié et compétent, un parc matériel haut de gamme et des espaces de travail dont l’acoustique est étudiée et maitrisée.
+      <br>Le studio est l’endroit où sont réunis le maximum de compétences humaines, les outils indispensables et les espaces insonorisés adéquats. Enregistrer un instrument dans un lieu spécifique est le gage de la qualité sonore, utiliser un piano à queue ou une batterie ne peut être fait n’importe où.
+      <br>La musique demande beaucoup de compétence différentes, arrangeur, réalisateur, ingénieur du son, mixeur, mastering, chacun est spécialisé dans son travail pour donner le meilleur au projet.
     </div>
     <div class="col-lg-6">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -36,40 +41,29 @@
       </div>
     </div>
     </div>
-    <br><br><br><br><br><br>
-
-
-    <div class="row mb-5" >
+    <br><br><br>
+    <hr>
+    <br>
+    <div class="containershow px-5" >
         <h2>Votre Music Room chez <%= @room.name %></h2><br>
     </div>
-    <div class="container px-5">
+    <div class="containershow px-5">
       <%= simple_form_for [@room, @reservation] do |f| %>
-        <%= f.input :description %>
+        <%= f.input :description, placeholder: "Describe what you need for playing your music"  %>
         <%= f.input :date %>
         <%= f.submit 'Réserver', class: 'btn btn-success btn-lg active' %>
       <% end %>
     </div>
-
-
-
-
-
     <br><br><br><br>
      <div class="row">
-      <div class="col">
-
+      <div class="col-lg-6">
+        <img src="https://media4.obspm.fr/public/ressources_lu/pages_tp-calendrier/images/Fig01.jpg" alt="calendar" width="500" height="350">
       </div>
-        <div class="col-lg-8">
+        <div class="col-lg-6">
+          <img src='https://france3-regions.francetvinfo.fr/image/YRt50hFN8acp6KY6lTzg0Nceb28/930x620/regions/2020/09/08/5f571510e867b_rue_breteuil-4991272.jpg' alt="map" width="500" height="350">
       </div>
      </div>
-
-
   </div>
-
-
-
-
-
 <br><br><br><br><br><br>
 
 

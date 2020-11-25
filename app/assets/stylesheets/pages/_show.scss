@@ -39,3 +39,19 @@ grid-row-gap: 0px;
 .div1 { grid-area: 1 / 1 / 2 / 2; }
 .div2 { grid-area: 2 / 1 / 3 / 2; }
 .div3 { grid-area: 2 / 2 / 3 / 3; }
+
+.containershow {
+box-shadow: 3px 3px 3px 1px rgba(215, 215, 215, .1);
+padding: 10px;
+}
+
+.containerroom {
+box-shadow: 3px 3px 3px 1px rgba(180, 190, 190, .1);
+padding: 20px;
+}
+
+
+
+
+
+
