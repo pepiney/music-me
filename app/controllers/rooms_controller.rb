@@ -10,12 +10,7 @@ class RoomsController < ApplicationController
   def show
     @room = Room.find(params[:id])
     @reservation = Reservation.new
-    # @markers = @rooms.geocoded.map do |room|
-    #   {
-    #     lat: room.latitude,
-    #     lng: room.longitude
-    #   }
-    # end
+    @marker = { lat: @room.latitude, lng: @room.longitude, image_url: helpers.asset_url('guitare.jpg') }
   end
 
   def new
