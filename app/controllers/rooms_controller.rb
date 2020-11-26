@@ -1,6 +1,10 @@
 class RoomsController < ApplicationController
   def index
-    @rooms = Room.all
+    if params[:query].present?
+      @rooms = Room.where("city ILIKE ?", "%#{params[:query]}%")
+    else
+      @rooms = Room.all
+    end
   end
 
   def show
