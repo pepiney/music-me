@@ -1,45 +1,61 @@
 
 <div class="cards">
+    <%= link_to rooms_path(@room, :query => 'Lyon') do %>
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
-    Lyon
+  Lyon
   </div>
+  <% end %>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlBUcxR9_RMDpbvkZpoZmuCnvLK6ECSjWrNw&usqp=CAU)">
-    Paris
+   <%= link_to rooms_path(@room, :query => 'Paris') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Paris
   </div>
+  <% end %>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.zikinf.com/_gfx/annonces/dyn/studio-d-enregistrement-1878094.jpg?1563713197)">
-    Rennes
+  <%= link_to rooms_path(@room, :query => 'Rennes') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Rennes
   </div>
-</div>
-
-
-
-<div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.spectable.com/image/image/M/studios-louer-annee_523824.jpg)">
-    Aubagne
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.cerky-studio.com/wp-cerky/uploads/2019/09/cerky-studio-control-room.jpg)">
-    Allauch
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCaIq2qLLr-Efin-HCZ-qrNpdOQMgBBaP6qA&usqp=CAU)">
-    <%= link_to "Marseille", rooms_path %>
-  </div>
+  <% end %>
 </div>
 
 <div class="cards">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://silenceetvibration.com/v2/wp-content/uploads/2019/04/IMG_3557a.jpg)">
-    Bordeaux
+  <%= link_to rooms_path(@room, :query => 'Aubagne') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Aubagne
   </div>
+  <% end %>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRZ0ZDInCZyMH4g137IGFUjeY7h0kofeSjLA&usqp=CAU)">
-    Nîmes
+   <%= link_to rooms_path(@room, :query => 'Allauch') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Allauch
   </div>
+  <% end %>
 
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.montmartrerecording.com/wp-content/uploads/2015/04/cabine-enregistrement-record-paris.jpg)">
-    St Etiennes
+   <%= link_to rooms_path(@room, :query => 'Marseille') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Marseille
   </div>
+  <% end %>
+</div>
+
+<div class="cards">
+   <%= link_to rooms_path(@room, :query => 'Bordeaux') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Bordeaux
+  </div>
+  <% end %>
+
+ <%= link_to rooms_path(@room, :query => 'Nîmes') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Nîmes
+  </div>
+  <% end %>
+
+  <%= link_to rooms_path(@room, :query => 'Saint-Etienne') do %>
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.studio-ldc.com/images/studio/studio-3.jpg)">
+  Saint-Etienne
+  </div>
+  <% end %>
 </div>
 

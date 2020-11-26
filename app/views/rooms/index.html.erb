@@ -1,4 +1,4 @@
-  <h2 class="btn btn-ghost d-flex"><%= link_to "Home", root_path  %> </h2>
+<%= link_to "Home", root_path, class: "btn btn-secondary text-decoration-none"  %>
 
   <div class="row justify-content-center" class="containerroom">
   <h1 class="text-center">Salles de répétition à Marseille</h1>
@@ -15,8 +15,8 @@
                     </div>
                     <div class="card-body ">
                         <h4 class="card-title"><%= link_to room.name, room_path(room)  %></h4>
-                        
-                        
+
+
                         <p class="card-text"><%= room.description %></p>
                     </div>
                 </div>
