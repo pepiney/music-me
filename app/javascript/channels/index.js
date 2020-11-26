@@ -3,3 +3,7 @@
 
 const channels = require.context('.', true, /_channel\.js$/)
 channels.keys().forEach(channels)
+
+$(window).scroll(function(){
+  $('nav').toggleClass('scrolled', $(this).scrollTop() > 370);
+});
