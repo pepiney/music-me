@@ -6,6 +6,12 @@ class RoomsController < ApplicationController
   def show
     @room = Room.find(params[:id])
     @reservation = Reservation.new
+    # @markers = @rooms.geocoded.map do |room|
+    #   {
+    #     lat: room.latitude,
+    #     lng: room.longitude
+    #   }
+    # end
   end
 
   def new
