@@ -16,13 +16,13 @@
     <div class="container text-center">
       <h1><strong>Music-me</strong></h1>
       <p>Rechercher, Reserver, Jouer </p>
-
     </div>
+      <% if action_name != "/rooms/new" %>
+        <%= render 'shared/navbar' %>
+      <% end %>
   </div>
 
-    <% if action_name != "/rooms/new" %>
-      <%= render 'shared/navbar' %>
-    <% end %>
+
     <%= yield %>
     <%= render 'shared/flashes' %>
    <!-- Footer -->
