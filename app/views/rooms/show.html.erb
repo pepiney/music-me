@@ -3,7 +3,7 @@
   <div class="containerroom">
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
-   <%= link_to "15 rue d'endoume, Marseille", "https://www.google.com/maps/place/15+Rue+d'Endoume,+13007+Marseille/@43.291051,5.3645702,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9c0c5f3daeb8f:0xddc92c5416a797c2!8m2!3d43.291051!4d5.3667589" %>
+  <h6> <%= @room.address %> </h6>
   </div>
   <br><br><br>
   <div class="row">
@@ -55,13 +55,16 @@
       <% end %>
     </div>
     <br><br><br><br>
-     <div class="row">
-      <div class="col-lg-6">
-        <img src="https://media4.obspm.fr/public/ressources_lu/pages_tp-calendrier/images/Fig01.jpg" alt="calendar" width="500" height="350">
-      </div>
-        <div class="col-lg-6">
-          <img src='https://france3-regions.francetvinfo.fr/image/YRt50hFN8acp6KY6lTzg0Nceb28/930x620/regions/2020/09/08/5f571510e867b_rue_breteuil-4991272.jpg' alt="map" width="500" height="350">
-      </div>
-     </div>
+    <div class="row">
+          <div id="map"
+            style="width: 700px; height: 500px;"
+            data-marker="<%= @marker.to_json %>"
+            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+          </div>
+    </div>
   </div>
 <br><br><br><br><br><br>
+
+
+
+
