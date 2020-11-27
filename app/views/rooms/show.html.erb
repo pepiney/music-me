@@ -1,6 +1,6 @@
 <br>
 <div class="containershow">
-  <div class="containerroom">
+  <div class="containerroom d-flex">
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
   <h6> <%= @room.address %> </h6>
@@ -44,6 +44,7 @@
       </div>
     </div>
     </div>
+
     <div class="row p-5">
     <div class="col-lg-4">
       <div class="form-wrapper" id="calendar">
@@ -53,8 +54,7 @@
       <% end %>
       </div>
       </div>
-  
-    
+ 
       <div class="col-lg-8">
       <div id="map"
         style="width: 800px; height: 300px;"
@@ -62,11 +62,8 @@
         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
       </div>
-    
-    
+ 
     </div>
-  </div>
-<br><br><br><br><br><br>
 
 
 
