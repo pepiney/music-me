@@ -43,8 +43,8 @@
     </div>
     </div>
     <div class="row p-5">
-    <div class="col-lg-6">
 
+    <div class="col-lg-4">
       <div class="form-wrapper" id="calendar">
       <%= simple_form_for [@room, @reservation] do |f| %>
         <%= f.input :date, as: :string, input_html: { class: "datepicker" }, placeholder: "Choisissez votre date de réservation" %>
@@ -53,7 +53,7 @@
       </div>
       </div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-8">
       <div id="map"
         style="width: 800px; height: 300px;"
         data-marker="<%= @marker.to_json %>"
