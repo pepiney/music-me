@@ -1,12 +1,10 @@
-<br>
 <div class="containershow">
-  <div class="containerroom d-flex">
+  <div class="containerroom">
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
   <h6> <%= @room.address %> </h6>
- 
+
 </div>
-   
 
   <br><br><br>
   <div class="row pb-5">
@@ -44,9 +42,9 @@
       </div>
     </div>
     </div>
-
     <div class="row p-5">
-    <div class="col-lg-4">
+    <div class="col-lg-6">
+
       <div class="form-wrapper" id="calendar">
       <%= simple_form_for [@room, @reservation] do |f| %>
         <%= f.input :date, as: :string, input_html: { class: "datepicker" }, placeholder: "Choissisez votre date de réservation"%>
@@ -54,16 +52,14 @@
       <% end %>
       </div>
       </div>
- 
-      <div class="col-lg-8">
+
+      <div class="col-lg-6">
       <div id="map"
         style="width: 800px; height: 300px;"
         data-marker="<%= @marker.to_json %>"
         data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
       </div>
- 
     </div>
-
-
+  </div>
 
