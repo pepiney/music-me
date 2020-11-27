@@ -3,7 +3,9 @@
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
   <h6> <%= @room.address %> </h6>
+
 </div>
+
   <br><br><br>
   <div class="row pb-5">
     <div class="col-lg-6">
@@ -42,6 +44,7 @@
     </div>
     <div class="row p-5">
     <div class="col-lg-6">
+
       <div class="form-wrapper" id="calendar">
       <%= simple_form_for [@room, @reservation] do |f| %>
         <%= f.input :date, as: :string, input_html: { class: "datepicker" }, placeholder: "Choissisez votre date de réservation"%>
@@ -49,6 +52,7 @@
       <% end %>
       </div>
       </div>
+
       <div class="col-lg-6">
       <div id="map"
         style="width: 800px; height: 300px;"
@@ -58,3 +62,4 @@
       </div>
     </div>
   </div>
+
