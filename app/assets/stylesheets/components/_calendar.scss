@@ -1,0 +1,22 @@
+#calendar {
+  width: 350px;
+  left: 20px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.btni {
+  border: lightblue;
+  border-radius: 25px;
+  background-color: rgba(8, 6, 6, 0.822);
+  color: white;
+  width: 350px;
+}
+.btni:hover {
+  transition: 0.8s ease-out;
+  background-color: #d3c7c9ea;
+  color: rgba(20, 19, 19, 0.829);
+}
+label {
+  display: none;
+}
