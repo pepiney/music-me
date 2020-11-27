@@ -4,6 +4,12 @@ class RoomsController < ApplicationController
       @rooms = Room.where("city ILIKE ?", "%#{params[:query]}%")
     else
       @rooms = Room.all
+     @markers = @rooms.geocoded.map do |room|
+      {
+        lat: room.latitude,
+        lng: room.longitude
+      }
+    end
     end
   end
 
