@@ -47,7 +47,7 @@
 
       <div class="form-wrapper" id="calendar">
       <%= simple_form_for [@room, @reservation] do |f| %>
-        <%= f.input :date, as: :string, input_html: { class: "datepicker" }, placeholder: "Choissisez votre date de réservation"%>
+        <%= f.input :date, as: :string, input_html: { class: "datepicker" }, placeholder: "Choisissez votre date de réservation" %>
         <%= f.button :submit, "Réserver", class: "btni" %>
       <% end %>
       </div>
