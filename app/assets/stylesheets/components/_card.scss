@@ -94,3 +94,27 @@
 .card-product .card-product-infos {
   padding: 16px;
 }
+
+.card-title a {
+  color: #FE6A03;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-footer {
+  background-color: white;
+}
+
+.card-text {
+  color:#333333;
+}
+
+.card-text a {
+  color:#FE6A03 ;
+  text-decoration: none;
+}
+
+.card-text a:hover {
+  color:#FE4A03 ;
+  text-decoration: none;
+}

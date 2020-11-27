@@ -17,13 +17,15 @@
 
 
                         <p class="card-text"><%= room.description %></p>
+                        <p class="card-text"><%= link_to "Plus d'infos ...", room_path(room) %></p>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <small class="text-muted"><%=room.address %></small>
+                    <p class="text-muted"><%=room.address %></p>
                 </div>
             </div>
             <%end%>
         </div>
     </div>
 </div>
+<br>
