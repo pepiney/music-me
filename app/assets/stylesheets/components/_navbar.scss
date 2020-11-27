@@ -3,7 +3,7 @@
 }
 
 
-body{min-height:100vh;}
+body{min-height:0vh;}
 
 .navbar-fixed-top{
   justify-content: space-between;
@@ -12,7 +12,7 @@ body{min-height:100vh;}
 }
 .navbar-fixed-top.scrolled{
   z-index: 200;
-  background: linear-gradient(0.7turn, #FFFFFF, #F7F7F7F7, #DDDDDD);
+  background: rgba(190, 190, 190, 0.1);
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -33,4 +33,5 @@ body{min-height:100vh;}
 
 #query {
   background-color:#EFF0EA;
+  color: black;
 }
