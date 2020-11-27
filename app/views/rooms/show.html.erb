@@ -4,16 +4,12 @@
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
   <h6> <%= @room.address %> </h6>
-    <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
-      <%= simple_form_for [@room, @reservation] do |f| %>
-        <%= f.input :date, as: :string, input_html: { class: "datepicker" } %>
-        <%= f.button :submit, "Réserver", class: "btn btn-primary" %>
-      <% end %>
-    </div>
-  </div>
+ 
+</div>
+   
 
   <br><br><br>
-  <div class="row">
+  <div class="row pb-5">
     <div class="col-lg-6">
      Notre Home Studio réunit les meilleures conditions propices au travail en Studio d'enregistrement.
      Depuis de nombreuses années nous efforçons de nous mettre au service de votre projet !
@@ -48,16 +44,26 @@
       </div>
     </div>
     </div>
-    <br><br><br>
-    <hr>
-    <br>
-    <br><br><br><br>
-    <div class="row">
-          <div id="map"
-            style="width: 700px; height: 500px;"
-            data-marker="<%= @marker.to_json %>"
-            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-          </div>
+    <div class="row p-5">
+    <div class="col-lg-4">
+      <div class="form-wrapper" id="calendar">
+      <%= simple_form_for [@room, @reservation] do |f| %>
+        <%= f.input :date, as: :string, input_html: { class: "datepicker" }, placeholder: "Choissisez votre date de réservation"%>
+        <%= f.button :submit, "Réserver", class: "btni" %>
+      <% end %>
+      </div>
+      </div>
+  
+    
+      <div class="col-lg-8">
+      <div id="map"
+        style="width: 800px; height: 300px;"
+        data-marker="<%= @marker.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
+      </div>
+    
+    
     </div>
   </div>
 <br><br><br><br><br><br>
