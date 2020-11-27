@@ -16,3 +16,16 @@
 @import 'mapbox-gl/dist/mapbox-gl';
 @import "flatpickr/dist/themes/airbnb";
 
+body {
+  background-color: #F0F0F0;
+  background: linear-gradient(0.70turn, #FFFFFF, #F0F0F0F0, #F9F9E9E9);
+}
+
+footer {
+  background-color: #FFFFFF
+}
+
+h5 {
+  font-size: 1.3em;
+ }
+
