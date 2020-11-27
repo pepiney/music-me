@@ -1,6 +1,6 @@
 <br>
 <div class="containershow">
-  <div class="containerroom">
+  <div class="containerroom d-flex">
   <h1> <%= @room.name %> </h1>
   <h3> <%= @room.city %> </h3>
   <h6> <%= @room.address %> </h6>
@@ -52,14 +52,14 @@
     <hr>
     <br>
     <br><br><br><br>
-    <div class="row">
+  </div>
+      <div class="row">
           <div id="map"
             style="width: 700px; height: 500px;"
             data-marker="<%= @marker.to_json %>"
             data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
           </div>
     </div>
-  </div>
 <br><br><br><br><br><br>
 
 

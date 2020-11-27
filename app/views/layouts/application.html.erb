@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% if action_name != "/rooms/new" %>
-      <%= render 'shared/navbar' %>
-    <% end %>
     <title>MusicMe</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -21,6 +18,9 @@
       <p>Rechercher, Reserver, Jouer </p>
     </div>
   </div>
+    <% if action_name != "/rooms/new" %>
+      <%= render 'shared/navbar' %>
+    <% end %>
     <%= yield %>
     <%= render 'shared/flashes' %>
    <!-- Footer -->
